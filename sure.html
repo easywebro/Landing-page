@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>ProductX</h1>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#pricing">Pricing</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section id="hero">
+
+        <h2>Welcome to ProductX</h2>
+
+        <p>Your solution for all your needs.</p>
+
+        <a href="#contact" class="cta-button">Get Started</a>
+
+    </section>
+
+    <section id="features">
+
+        <h2>Key Features</h2>
+
+        <ul>
+
+            <li>Feature 1</li>
+
+            <li>Feature 2</li>
+
+            <li>Feature 3</li>
+
+        </ul>
+
+    </section>
+
+    <section id="pricing">
+
+        <h2>Pricing Plans</h2>
+
+        <div class="pricing-card">
+
+            <h3>Basic</h3>
+
+            <p>$19/month</p>
+
+            <a href="#contact" class="cta-button">Buy Now</a>
+
+        </div>
+
+        <div class="pricing-card">
+
+            <h3>Pro</h3>
+
+            <p>$49/month</p>
+
+            <a href="#contact" class="cta-button">Buy Now</a>
+
+        </div>
+
+        <div class="pricing-card">
+
+            <h3>Premium</h3>
+
+            <p>$99/month</p>
+
+            <a href="#contact" class="cta-button">Buy Now</a>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <label for="name">Name</label>
+
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="cta-button">Submit</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>&copy; 2023 ProductX</p>
+
+    </footer>
+
+</body>
+
+</html>
+<style>
+
+body, h1, h2, ul {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+
+    background-color: #333;
+
+    color: white;
+
+    padding: 10px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+header h1 {
+
+    font-size: 1.5rem;
+
+    margin-left: 20px;
+
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+}
+
+nav li {
+
+    margin-right: 20px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+section {
+
+    padding: 40px;
+
+}
+
+/* Hero section */
+
+#hero {
+
+    background-color: #007BFF;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+#hero h2 {
+
+    font-size: 2rem;
+
+}
+
+#hero p {
+
+    font-size: 1.2rem;
+
+}
+
+.cta-button {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+}
+
+/* Features section */
+
+#features ul {
+
+    list-style: disc;
+
+    margin-left: 20px;
+
+}
+
+/* Pricing section */
+
+#pricing {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.pricing-card {
+
+    background-color: #f0f0f0;
+
+    padding: 20px;
+
+    border-radius: 5px;
+
+    margin: 10px;
+
+    text-align: center;
+
+}
+
+.pricing-card h3 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+
+}
+
+.pricing-card p {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 20px;
+
+}
+
+/* Contact section */
+
+#contact form {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+#contact label,
+
+#contact input,
+
+#contact textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+}
+
+#contact button {
+
+    grid-column: span 2;
+
+    text-align: center;
+
+}
+
+/* Footer */
+
+footer {
+
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 10px 0;
+
+}
+</style>
